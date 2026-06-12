@@ -1,0 +1,24 @@
+{
+ "seed": 20260612,
+ "max_nodes": 5,
+ "m_obs": 20,
+ "n_null_sets": 500,
+ "survival_percentile": 99.9,
+ "fakes": {
+  "A_adversarial_fit_G_STRUCT": {
+   "joint_score": 4.422545624413078,
+   "percentile": 89.0,
+   "null_median": 4.265768141743774,
+   "null_p999": 4.667184254428653,
+   "verdict": "CONDEMNED"
+  },
+  "B_invented_alphabet": {
+   "joint_score": 4.040714061009718,
+   "percentile": 17.4,
+   "null_median": 4.15318172581407,
+   "null_p999": 4.571138585038353,
+   "verdict": "CONDEMNED"
+  }
+ },
+ "negative_controls_pass": true
+}
