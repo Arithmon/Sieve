@@ -1,0 +1,73 @@
+{
+ "max_nodes": 6,
+ "rank_max": 3,
+ "grammar": "G_INT",
+ "controls": {
+  "eddington": {
+   "claims": [
+    {
+     "label": "1929 claim 136 vs Birge-1929 137.29(11)",
+     "claim": 136.0,
+     "x": 137.29,
+     "sigma": 0.11,
+     "z": 11.727272727272656,
+     "rank": 11,
+     "revisions": 1,
+     "corrected_rank": 11,
+     "passes": false
+    },
+    {
+     "label": "1930 revised 137 vs Birge-1929 (x2 revision)",
+     "claim": 137.0,
+     "x": 137.29,
+     "sigma": 0.11,
+     "z": 2.636363636363564,
+     "rank": 3,
+     "revisions": 2,
+     "corrected_rank": 6,
+     "passes": false
+    },
+    {
+     "label": "1930 claim 137 vs Birge-1941 137.030(16)",
+     "claim": 137.0,
+     "x": 137.03,
+     "sigma": 0.016,
+     "z": 1.875000000000071,
+     "rank": 1,
+     "revisions": 2,
+     "corrected_rank": 2,
+     "passes": false
+    }
+   ],
+   "control_ok": true
+  },
+  "quantum_hall": {
+   "claims": [
+    {
+     "label": "1980 von Klitzing: integer quantization @ 3 ppm",
+     "claim": 1.0,
+     "x": 1.0,
+     "sigma": 3e-06,
+     "z": 0.0,
+     "rank": 1,
+     "revisions": 1,
+     "corrected_rank": 1,
+     "passes": true
+    },
+    {
+     "label": "2012 graphene/GaAs universality @ 8.7e-11",
+     "claim": 1.0,
+     "x": 1.0,
+     "sigma": 8.7e-11,
+     "z": 0.0,
+     "rank": 1,
+     "revisions": 1,
+     "corrected_rank": 1,
+     "passes": true
+    }
+   ],
+   "control_ok": true
+  }
+ },
+ "historical_controls_pass": true
+}
