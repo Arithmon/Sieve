@@ -21,9 +21,13 @@ to be reused on any framework, including ours.
   values verified against CODATA 2022 / PDG 2025 / NuFIT 6.1 / Planck 2018
   with per-value citations) and the expression grammars (three alphabets, two
   complexity measures, anti-gaming guards).
-- [`scripts/`](scripts/) holds the generator for the machine-readable freeze
-  and, as they land, the pipeline stages: null models N0 to N3, calibration
-  controls, the scorecard.
+- [`scripts/`](scripts/) holds the pipeline: the expression-space engine
+  (three grammars, two complexity measures), the four null models N0 to N3,
+  the calibration controls, and the generic scorecard
+  (`coincidence_scorecard.py`: feed it any framework's claims against the
+  frozen targets and get the full component report).
+- [`results/`](results/) holds the machine-readable outputs of every run,
+  deterministic seeds throughout.
 
 ## The discipline
 
@@ -51,8 +55,25 @@ to be reused on any framework, including ours.
 [10.5281/zenodo.20666879](https://doi.org/10.5281/zenodo.20666879)
 (concept DOI for all versions:
 [10.5281/zenodo.20666878](https://doi.org/10.5281/zenodo.20666878)).
-At deposit time, **no expression search had run**; the pipeline now under
-construction operates against these inputs as frozen.
+At deposit time, **no expression search had run**; everything below operates
+against these inputs as frozen.
+
+**Calibration complete (scaffold budget, 5-6 nodes):**
+
+- Negative controls CONDEMNED: an adversarial best-match fit and an
+  invented-alphabet framework land at the 89th and 17th percentile of the
+  fitting null (survival requires the 99.9th).
+- Historical verdicts reproduced: Eddington's 136-then-137 FAILS at every
+  era (never within 1 sigma of contemporary data, revision penalty applied);
+  the quantum Hall quantization PASSES (exact, essentially unique, never
+  revised, explained by TKNN 1982).
+- Four nulls implemented: N1/N2 price the search (survival thresholds clear
+  the N2 alphabet-freedom envelope), N3 catches assignment vagueness, N0
+  anchors the accidental-match baseline.
+- First N1 against the frozen list: at a 5-node budget, 6/28 (G_INT), 3/28
+  (G_STRUCT) and 2/28 (G_TRANS) entries carry information at their measured
+  precision; a lone match on a loosely measured constant is worth little by
+  construction.
 
 ## Contributing
 
