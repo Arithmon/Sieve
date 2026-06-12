@@ -1,5 +1,7 @@
 # The Arithmon Sieve
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20666879.svg)](https://doi.org/10.5281/zenodo.20666879)
+
 The methodology arm of the [Arithmon program](https://github.com/arithmon):
 a formal standard for the question *how surprising is a claimed exact relation
 between mathematical invariants and measured physical constants?*
@@ -45,8 +47,12 @@ to be reused on any framework, including ours.
 
 ## Status
 
-Freeze v1.0 drafted and agent-verified against primary sources; human
-spot-check and Zenodo deposit pending. **No expression search has run.**
+**Freeze v1.0 DEPOSITED 2026-06-12**: DOI
+[10.5281/zenodo.20666879](https://doi.org/10.5281/zenodo.20666879)
+(concept DOI for all versions:
+[10.5281/zenodo.20666878](https://doi.org/10.5281/zenodo.20666878)).
+At deposit time, **no expression search had run**; the pipeline now under
+construction operates against these inputs as frozen.
 
 ## Contributing
 
