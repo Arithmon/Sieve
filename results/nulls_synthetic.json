@@ -1,0 +1,84 @@
+{
+ "seed": 20260612,
+ "max_nodes": 5,
+ "n_targets": 2000,
+ "log_range": [
+  0.001,
+  1000.0
+ ],
+ "z": 1.0,
+ "grammars": {
+  "G_INT": {
+   "alphabet_size": 9,
+   "growth": {
+    "1": 9,
+    "2": 29,
+    "3": 138,
+    "4": 1030,
+    "5": 5147
+   },
+   "n0": {
+    "0.01": {
+     "mean_matches": 5.689,
+     "frac_targets_with_match": 0.889
+    },
+    "0.001": {
+     "mean_matches": 0.5615,
+     "frac_targets_with_match": 0.3385
+    },
+    "0.0001": {
+     "mean_matches": 0.064,
+     "frac_targets_with_match": 0.048
+    }
+   }
+  },
+  "G_STRUCT": {
+   "alphabet_size": 50,
+   "growth": {
+    "1": 32,
+    "2": 119,
+    "3": 1538,
+    "4": 16735,
+    "5": 160709
+   },
+   "n0": {
+    "0.01": {
+     "mean_matches": 132.1345,
+     "frac_targets_with_match": 1.0
+    },
+    "0.001": {
+     "mean_matches": 12.661,
+     "frac_targets_with_match": 0.994
+    },
+    "0.0001": {
+     "mean_matches": 1.2885,
+     "frac_targets_with_match": 0.545
+    }
+   }
+  },
+  "G_TRANS": {
+   "alphabet_size": 19,
+   "growth": {
+    "1": 19,
+    "2": 85,
+    "3": 1145,
+    "4": 10610,
+    "5": 123847
+   },
+   "n0": {
+    "0.01": {
+     "mean_matches": 138.7935,
+     "frac_targets_with_match": 0.9995
+    },
+    "0.001": {
+     "mean_matches": 13.5625,
+     "frac_targets_with_match": 0.8465
+    },
+    "0.0001": {
+     "mean_matches": 1.3545,
+     "frac_targets_with_match": 0.4565
+    }
+   }
+  }
+ }
+}
