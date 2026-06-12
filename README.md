@@ -14,6 +14,10 @@ the instrument: a declared expression space, complexity measures, a family of
 null models with explicit look-elsewhere correction, and a scorecard designed
 to be reused on any framework, including ours.
 
+The program's charter and open problems live in the
+[program](https://github.com/arithmon/program) repository; the map of
+adjacent work lives in the [atlas](https://github.com/arithmon/atlas).
+
 ## Contents
 
 - [`freeze/`](freeze/) holds the frozen inputs: the observable list (28
