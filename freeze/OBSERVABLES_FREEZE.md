@@ -1,10 +1,11 @@
-# Frozen observable list -- v1 DRAFT (agent-verified, not yet frozen)
+# Frozen observable list -- v1.0 (FROZEN)
 
-> **Status: DRAFT, agent-verified.** All 28 values verified against fetched
-> primary sources by four research agents (2026-06-12) with per-value
-> citations; human spot-check pending. Nothing in this file is frozen until it
-> is deposited on Zenodo with a dated DOI. Until then, no expression search
-> runs against any value listed here (PLAN.md, rule 1).
+> **Status: FROZEN v1.0.** All 28 values verified against fetched primary
+> sources by four research agents (2026-06-12) with per-value citations;
+> human spot-check completed 2026-06-12. Frozen by the Zenodo deposit of the
+> v1.0 release of this repository; the DOI timestamp certifies that no
+> expression search against these values preceded the freeze. Any change
+> requires a new version with its own DOI and a journaled register move.
 >
 > **Design goal:** a list of dimensionless measured constants whose inclusion
 > criteria can be stated and defended *without reference to any framework*. The
@@ -171,11 +172,10 @@ internal dataset and checked against the FoP supplements:
 1. ~~Resolve flagged conflicts~~ DONE 2026-06-12 (D6 ordering, D12 reference
    points, D13 quark surface, D14 m_t, D15 Y_p; m_H/v over lambda_H).
 2. ~~Agent verification pass~~ DONE 2026-06-12 (four agents, primary sources
-   fetched, citations in section 2). REMAINS: human spot-check (Brieuc),
-   including the two internal-dataset discrepancies in section 2b.
+   fetched, citations in section 2). ~~Human spot-check~~ DONE 2026-06-12.
 3. ~~Generate machine-readable mirror~~ DONE (`observables_freeze_draft.json`).
-4. After spot-check: rename draft to `observables_freeze.json`, strip DRAFT
-   banners, deposit (Zenodo, Arithmon community; GitHub-Zenodo via the public
-   repo per D8 if it exists by then).
-5. Record the DOI here and in PLAN.md. From that moment the list is immutable;
-   changes mean a new version with its own DOI and a journaled register move.
+4. ~~Deposit~~ DONE 2026-06-12: GitHub release v1.0 of arithmon/Sieve,
+   archived by the Zenodo integration (metadata from `.zenodo.json`).
+5. DOI: recorded in the repository README upon Zenodo registration. From the
+   v1.0 release the list is immutable; changes mean a new version with its
+   own DOI and a journaled register move.

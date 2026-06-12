@@ -1,9 +1,9 @@
-# Frozen grammars and complexity measures -- v0 DRAFT (not yet frozen)
+# Frozen grammars and complexity measures -- v1.0 (FROZEN)
 
-> **Status: DRAFT for review.** Same rule as the observable freeze: nothing here
-> is binding until the dated DOI deposit. The paper's robustness section
-> (skeleton 6.1-6.2) requires at least three grammars and two complexity
-> measures; this draft proposes them.
+> **Status: FROZEN v1.0.** Frozen by the same v1.0 release deposit as the
+> observable list. The paper's robustness section requires at least three
+> grammars and two complexity measures; these are them. Any change requires a
+> new version with its own DOI and a journaled register move.
 
 ---
 

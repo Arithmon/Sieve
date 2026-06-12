@@ -173,7 +173,7 @@ for e in entries:
 
 doc = {
     'meta': {
-        'status': 'DRAFT v1 -- agent-verified, human spot-check pending, NOT deposited',
+        'status': 'FROZEN v1.0 -- agent-verified + human spot-check 2026-06-12; frozen by the Zenodo deposit of release v1.0',
         'paper': 'counting_coincidences (Axis 1 methodology paper)',
         'criteria': 'OBSERVABLES_FREEZE.md sections 1 and 3',
         'conventions': 'PLAN.md decisions D6, D7, D11, D12, D13, D14, D15',
