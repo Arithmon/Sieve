@@ -1,0 +1,31 @@
+{
+ "title": "Counting coincidences: frozen inputs (observable list and expression grammars), v1.0",
+ "upload_type": "dataset",
+ "creators": [
+  {
+   "name": "de La Fourniere, Brieuc",
+   "orcid": "0009-0000-0641-9740"
+  }
+ ],
+ "description": "Pre-registered frozen inputs for a methods paper on evaluating claimed exact relations between mathematical invariants and measured dimensionless physical constants: a 28-entry observable list with framework-independent inclusion criteria and primary-source citations (CODATA 2022, PDG 2025, NuFIT 6.1, Planck 2018), three expression grammars with declared closure rules, two complexity measures, and anti-gaming guards. Deposited BEFORE any expression search; the DOI timestamp certifies the no-search-before-freeze discipline. Part of the Arithmon research program (arithmon.com).",
+ "keywords": [
+  "null models",
+  "look-elsewhere effect",
+  "pre-registration",
+  "dimensionless constants",
+  "Standard Model parameters",
+  "experimental mathematics",
+  "methodology",
+  "numerology"
+ ],
+ "license": "cc-by-4.0",
+ "version": "1.0",
+ "language": "eng",
+ "related_identifiers": [
+  {
+   "identifier": "https://arithmon.com",
+   "relation": "isPartOf",
+   "resource_type": "other"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "errors": 0,
+    "warnings": 1,
+    "info": 4
+  },
+  "issues": [
+    {
+      "file": "freeze/GRAMMARS_FREEZE.md",
+      "line": 39,
+      "column": 67,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode relation \u2264 instead of <=.",
+      "context": "- dimensions and ranks of all compact simple Lie groups of rank <= 8"
+    },
+    {
+      "file": "freeze/GRAMMARS_FREEZE.md",
+      "line": 78,
+      "column": 63,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "bookkeeping disputes. Results stable across both measures = robust claim;"
+    },
+    {
+      "file": "freeze/GRAMMARS_FREEZE.md",
+      "line": 94,
+      "column": 18,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode relation \u2264 instead of <=.",
+      "context": "|expr - x_exp| <= z * sigma_exp, with z in {1, 2} reported and the claimed"
+    },
+    {
+      "file": "freeze/GRAMMARS_FREEZE.md",
+      "line": 102,
+      "column": 38,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode relation \u2264 instead of <=.",
+      "context": "compact simple Lie groups of rank <= 8, Betti numbers of the"
+    },
+    {
+      "file": "freeze/OBSERVABLES_FREEZE.md",
+      "line": 74,
+      "column": 3,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| sin^2 theta-hat(M_Z) | MS-bar | 0.23122(6) | PDG 2025 Table 1.1 (NOT the eff. leptonic 0.23155) |"
+    }
+  ]
+}
