@@ -32,6 +32,10 @@ adjacent work lives in the [atlas](https://github.com/arithmon/atlas).
   frozen targets and get the full component report).
 - [`results/`](results/) holds the machine-readable outputs of every run,
   deterministic seeds throughout.
+- [`docs/`](docs/) holds the living pre-registration: the
+  [decisions ledger](docs/LEDGER.md) (discipline, milestones, dated decisions)
+  and the [legend](docs/LEGEND.md) that resolves every label used across the
+  program.
 
 ## The discipline
 

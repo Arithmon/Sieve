@@ -224,6 +224,84 @@ def distinct_up_to(levels, n):
     return best
 
 
+# ---------------------------------------------------------------------------
+# lean enumeration for deep rank computation (no witness strings, so level 7
+# fits in memory) and the budget-filtered rank used by the scorecard (D18)
+# ---------------------------------------------------------------------------
+
+def enumerate_lean(g, max_nodes, checkpoints, log=print):
+    """Same DP as enumerate_values but stores only {canon value -> min MDL}
+    plus the power-nesting depth for the guard; no witness strings. Returns
+    {d: (sorted values, parallel MDLs)} for each depth d in checkpoints, over
+    distinct values reachable in at most d nodes. Lets the enumeration reach
+    depth 7 (~22M values for G_STRUCT) without exhausting memory."""
+    lc, oc = g.leaf_cost(), g.op_cost()
+    levels = {n: {} for n in range(1, max_nodes + 1)}
+
+    def put(n, v, mdl, pdepth):
+        cv = canon(v)
+        cur = levels[n].get(cv)
+        if cur is None or mdl < cur[0]:
+            levels[n][cv] = (mdl, pdepth)
+
+    for name, v in g.leaves.items():
+        if _ok(v):
+            put(1, v, lc, 0)
+
+    snaps = {}
+    for n in range(2, max_nodes + 1):
+        for cv, (mdl, pd) in levels[n - 1].items():
+            for op in g.unary:
+                r = apply_unary(op, cv)
+                if r is not None and _ok(r):
+                    put(n, r, mdl + oc, pd)
+        for i in range(1, n - 1):
+            j = n - 1 - i
+            li, lj = levels[i], levels[j]
+            for av, (amdl, apd) in li.items():
+                for bv, (bmdl, bpd) in lj.items():
+                    base = amdl + bmdl + oc
+                    for op in g.binary:
+                        if op == '^':
+                            pd = max(apd, bpd) + 1
+                            if pd > 2:
+                                continue
+                        else:
+                            pd = max(apd, bpd)
+                        r = apply_binary(op, av, bv)
+                        if r is not None and _ok(r):
+                            put(n, r, base, pd)
+        log(f'  [{g.name}] nodes={n}: {len(levels[n])} distinct values')
+        if n in checkpoints:
+            best = {}
+            for m in range(1, n + 1):
+                for cv, (mdl, _) in levels[m].items():
+                    if cv not in best or mdl < best[cv]:
+                        best[cv] = mdl
+            pairs = sorted(best.items())
+            snaps[n] = ([p[0] for p in pairs], [p[1] for p in pairs])
+    return snaps
+
+
+def rank_at(snap, x, dev_abs, kappa=None):
+    """In a (sorted values, MDLs) snapshot, count distinct values within
+    [x - dev_abs, x + dev_abs] (rank_full), and the subset whose own min MDL is
+    at most kappa (rank_at_kappa, the principled scorecard statistic). Both are
+    floored at 1 (the claim's own value is always present)."""
+    import bisect
+    vals, mdls = snap
+    lo = bisect.bisect_left(vals, x - dev_abs)
+    hi = bisect.bisect_right(vals, x + dev_abs)
+    full = max(hi - lo, 1)
+    if kappa is None:
+        return full, full
+    # MDLs are float sums of log2 costs; a competitor of equal structural cost
+    # must count as "as cheap", so compare with a tolerance well above float
+    # noise (~1e-13 after the accumulation) and far below the smallest MDL gap.
+    budg = max(sum(1 for i in range(lo, hi) if mdls[i] <= kappa + 1e-9), 1)
+    return full, budg
+
+
 if __name__ == '__main__':
     for g in (G_INT(), G_STRUCT(betti=(21, 77)), G_TRANS()):
         print(f'{g.name}: |A| = {len(g.leaves)}, leaf cost {g.leaf_cost():.2f} '
