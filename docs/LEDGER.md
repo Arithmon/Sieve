@@ -119,9 +119,12 @@ the historical controls using their own frozen inputs.
 - **D19 (2026-06-13).** Value popularity is a declared third scorecard
   statistic, beside isolation (the budget-filtered rank, by description length)
   and reachability (the Monte-Carlo match probability at the claim budget, by
-  node count). Popularity is that match probability at a fixed small reference
-  budget (5 nodes): how reachable the target value is by simple formulas,
-  independent of the claim's own complexity. Rationale: precision plus low
+  node count). Popularity is the peak of that match probability over the simple
+  budgets up to a small reference (2 to 5 nodes): how reachable the target value
+  is by the most favorable simple formula size, independent of the claim's own
+  complexity. The peak, not a fixed size, because a value can be dense at one
+  small size only (a value of 2/3 is reachable by many 3-node formulas but that
+  signal is diluted if sampled at exactly 5 nodes). Rationale: precision plus low
   description length do not make a coincidence surprising if the value is easy
   to produce (a value of 2/3 is reachable by many simple formulas; an arbitrary
   ratio is not). The three statistics probe orthogonal axes and the scorecard

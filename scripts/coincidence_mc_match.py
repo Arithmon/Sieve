@@ -13,15 +13,16 @@ estimator answers two budget-honest questions by sampling, each with a Wilson
                target ). Small p = the match is hard to get by chance with a
                formula this complex; large p = the budget buys the match.
 
-  popularity P( a random valid expression of a fixed SMALL reference budget
-               (REF_NODES, default 5) lands within the same window ). This is a
-               property of the target VALUE, not of the claim: it measures how
-               reachable the number is with simple formulas. A value like 2/3
-               has many simple representations (popularity high) even when it is
-               the unique distinct value in its window; a value like 81/52 does
-               not (popularity low). Distinguishing the two is the point: high
-               precision plus low description length do not make a coincidence
-               surprising if the target value is easy to produce.
+  popularity The PEAK match probability over the simple budgets k = 2..REF_NODES
+               (default 5): how reachable the target VALUE is by the most
+               favorable simple formula size, a property of the value, not of
+               the claim. The peak (not a fixed size) is taken because a value
+               can be dense at one small size only: 2/3 is reachable by many
+               3-node formulas but that signal is diluted if sampled at exactly
+               5 nodes. A value like 2/3 reads popular; a value like 81/52 does
+               not. The point: high precision plus low description length do not
+               make a coincidence surprising if the target value is easy to
+               produce.
 
 DECLARED SAMPLING NULL (a researcher degree of freedom, journaled). A random
 expression of n nodes is generated top-down: at n == 1 a leaf is drawn uniformly
@@ -130,11 +131,21 @@ def main():
         s = Sampler(g, rng)
         x, K = c['target'], c['node_budget']
         tol = c['dev_abs']
+        # reachability: random formula at the claim's OWN node budget
         v1, m1 = estimate(s, x, tol, K, n_samples)
-        v2, m2 = estimate(s, x, tol, ref_nodes, n_samples)
         p1 = m1 / v1 if v1 else float('nan')
-        p2 = m2 / v2 if v2 else float('nan')
         lo1, hi1 = wilson(m1, v1)
+        # popularity: the PEAK accidental-match probability over the simple
+        # budgets k = 2..ref_nodes. A value reachable cheaply at any one small
+        # size (2/3 is dense at 3 nodes) reads popular; averaging over a fixed
+        # size dilutes that, so we take the most favorable simple size.
+        best = (-1.0, ref_nodes, 0, 0)
+        for k in range(2, ref_nodes + 1):
+            vk, mk = estimate(s, x, tol, k, n_samples)
+            pk = mk / vk if vk else 0.0
+            if pk > best[0]:
+                best = (pk, k, vk, mk)
+        p2, pop_nodes, v2, m2 = best
         lo2, hi2 = wilson(m2, v2)
         out.append({'id': c['id'], 'symbol': c.get('symbol', c['id']),
                     'grammar': c['grammar'], 'node_budget': K,
@@ -143,7 +154,7 @@ def main():
                     'p_match_valid': v1, 'p_match_hits': m1,
                     'popularity': p2, 'popularity_ci95': [lo2, hi2],
                     'popularity_valid': v2, 'popularity_hits': m2,
-                    'ref_nodes': ref_nodes})
+                    'popularity_at_nodes': pop_nodes, 'ref_nodes': ref_nodes})
         print(f'{c["id"]:<4} {c.get("symbol", c["id"]):<12} {c["grammar"]:<8} '
               f'{K:>3} {tol / abs(x):>9.2e} {p1:>11.3e} {p2:>11.3e}')
 
