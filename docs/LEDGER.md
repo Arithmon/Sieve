@@ -129,9 +129,47 @@ the historical controls using their own frozen inputs.
   to produce (a value of 2/3 is reachable by many simple formulas; an arbitrary
   ratio is not). The three statistics probe orthogonal axes and the scorecard
   reports all three.
+- **D21 (2026-06-13).** N2 for a single transcendental target (general method).
+  Price the transcendental alphabet as a researcher degree of freedom: keep the
+  integers, replace the named transcendental constants with same-cardinality
+  invented transcendentals, under two adversary magnitude profiles (a generic
+  one, and a magnitude-matched one that concedes any structural feature the real
+  block has). The survival rule is the same envelope rule as the multi-target
+  N2 (beat the luckiest invented alphabet, not the median), supplemented by the
+  probability that an invented alphabet matches at least as well as the claim,
+  which a single target affords. Case-study application is in the paper.
+- **D22 (2026-06-13).** N3 (assignment specificity) on a real heterogeneous
+  observable set (general method). A global permutation is won trivially by
+  magnitude spread, so N3 must use a within-scale permutation (shuffle only among
+  commensurate-magnitude observables, e.g. decade-binned). It is run with a FIT
+  control (best match per grammar) to display its necessary-not-sufficient limit,
+  and a VAGUE control to confirm it has discriminating power. Case-study
+  application is in the paper.
+- **D24 (2026-06-14).** The in-framework-theorem rebate, stated (resolving
+  `D10`). A relation found by search pays a look-elsewhere factor equal to the
+  certified value-haystack it scanned; a relation that is a theorem of a
+  pre-specified formal structure, committed before the target was consulted,
+  pays 1. The rebate is a binary indicator times a certified count, not a
+  continuous quantity a richer alphabet can buy, so it escapes the
+  closeness/coverage (N2) failure mode by construction. Earning it decomposes
+  into three checkable conditions: **R1a**, the value is a proven consequence of
+  the framework's invariants (the gate); **R1b**, the value is not
+  over-reachable within the framework, a single forced formula rather than many
+  (this is the `D19` popularity discount applied to the framework's own internal
+  routes); **R1c**, the physical observable is derived and shown equal to the
+  value, not merely identified with it (load-bearing for the physical claim).
+  **R2** is pre-commitment, witnessed by the freeze timestamp and the proof
+  history, never by trust. A machine-checked formal layer that certifies
+  expression-space counts and the rebate arithmetic lives in the public repo
+  [arithmon/lean](https://github.com/arithmon/lean) (Lean 4). The per-relation
+  audit of a case study is the paper's payload.
 
 > Numbering note. `D1` is internal workspace housekeeping (no protocol content).
 > `D17` is case-study-specific (the claim mapping and label conventions of a
 > scored framework); it is journaled with that case study and published in its
-> paper. The reserved numbers are kept so this ledger stays a faithful index of
-> every choice made, with nothing hidden, only located.
+> paper. Likewise `D20`, `D23`, `D25`, and `D26` are research-direction or
+> case-study-specific (a reordering of the work queue, a scorecard assembly, and
+> the per-relation rebate audits of a scored framework); they are journaled with
+> that case study and published in its paper. The reserved numbers are kept so
+> this ledger stays a faithful index of every choice made, with nothing hidden,
+> only located.
