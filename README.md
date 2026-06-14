@@ -6,13 +6,35 @@ The methodology arm of the [Arithmon program](https://github.com/arithmon):
 a formal standard for the question *how surprising is a claimed exact relation
 between mathematical invariants and measured physical constants?*
 
-A sieve separates structure from coincidence. The field currently has no
-shared instrument for that: claims oscillate between uncritical acceptance and
-reflexive dismissal, and the verdicts (Eddington on one side, the quantum Hall
-relation on the other) are only sorted in hindsight. This repository builds
-the instrument: a declared expression space, complexity measures, a family of
-null models with explicit look-elsewhere correction, and a scorecard designed
-to be reused on any framework, including ours.
+## In plain words
+
+Sometimes a short formula in fundamental constants and small whole numbers
+lands surprisingly close to a measured quantity. Sometimes that is a real clue
+about nature. Sometimes it is an accident, made to look meaningful afterwards by
+a lucky choice of formula. The hard part is telling the two apart *before* you
+know which one it is.
+
+History has both kinds. Eddington argued the fine-structure constant had to be
+exactly 1/136, then exactly 1/137 once the measurement moved: a coincidence,
+refitted after the fact. The quantum Hall resistance, by contrast, is an exact
+ratio that was predicted, never revised, and later explained: a real relation.
+The field usually only sorts cases like these in hindsight, once the verdict is
+already in.
+
+The Sieve is an attempt at an instrument that sorts them in advance, by a rule
+fixed before looking. The inputs (which constants count, which formulas are
+allowed) are written down and time-stamped with a public DOI before any search
+runs, so nothing can be quietly tuned to the answer. The instrument is then
+turned on known cases to check it behaves (Eddington must fail, the quantum Hall
+relation must pass), and only after that on anything we care about, including the
+GIFT framework itself. Anyone can run it on their own framework, including one
+built to try to beat it.
+
+---
+
+**The rest of this page is the technical specification**: the expression space,
+the complexity measures, the four null models, the scorecard. If you only wanted
+to know what the Sieve is and why to trust it, you have it.
 
 The program's charter and open problems live in the
 [program](https://github.com/arithmon/program) repository; the map of
@@ -89,9 +111,12 @@ against these inputs as frozen.
 
 Issues are welcome, in particular: historical cases that should join the
 calibration set, null models we have not considered, and ways to game the
-scorecard (rule 4 means finding them is a contribution). House style is
-enforced by the [org linter](https://github.com/arithmon/.github): plain
-language, no promotional vocabulary, no em-dashes.
+scorecard (rule 4 means finding them is a contribution). The four procedures the
+Sieve owns (propose or attack a null model, submit a hostile framework, challenge
+a freeze, report a cherry-picking issue) are spelled out in
+[CONTRIBUTING.md](CONTRIBUTING.md). House style is enforced by the
+[org linter](https://github.com/arithmon/.github): plain language, no promotional
+vocabulary, no em-dashes.
 
 ---
 
