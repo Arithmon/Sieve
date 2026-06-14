@@ -16,7 +16,9 @@ to be reused on any framework, including ours.
 
 The program's charter and open problems live in the
 [program](https://github.com/arithmon/program) repository; the map of
-adjacent work lives in the [atlas](https://github.com/arithmon/atlas).
+adjacent work lives in the [atlas](https://github.com/arithmon/atlas); the
+machine-checked formal layer (certified expression-space counts and the
+in-framework-theorem rebate) lives in [lean](https://github.com/arithmon/lean).
 
 ## Contents
 
