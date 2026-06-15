@@ -163,11 +163,31 @@ the historical controls using their own frozen inputs.
   expression-space counts and the rebate arithmetic lives in the public repo
   [arithmon/lean](https://github.com/arithmon/lean) (Lean 4). The per-relation
   audit of a case study is the paper's payload.
+- **D28 (2026-06-15).** The isolation rank can be certified EXACTLY, not only
+  estimated by the float engine (general method). The scorecard isolation rank
+  (`D18`: distinct grammar values matching the measurement as well or better) is
+  computed by the engine with a 12-significant-digit dedup, a proxy with a small
+  risk of false merges or splits near a window edge. For the RATIONAL FRAGMENT
+  of a grammar (operations that keep values rational; sqrt and transcendentals
+  excluded) the rank is instead an exact count over `Rat`, machine-checkable: the
+  same dynamic program whose `|E_rat|` counts the Lean layer certifies by
+  `native_decide`, restricted to the window, gives a provably correct rank.
+  Two method points. (i) Faithfulness is testable: the exact enumeration must
+  reproduce the certified counts before any rank is read from it. (ii) The window
+  edge must be the EXACT claim value, not `measured - dev_float`: the deposited
+  deviation is a rounded double, so a float edge can place the claim a
+  float-epsilon outside its own window and undercount it by one. The exact rank
+  is a lower bound on the full-grammar rank (sqrt paths can only add
+  competitors); equality with the float rank certifies that no excluded-operation
+  competitor sits in the window. The machinery lives in the public Lean layer
+  ([arithmon/lean](https://github.com/arithmon/lean), `Arithmon/Sieve/GStruct.lean`);
+  the case-study windows (a framework's measured value plus or minus its achieved
+  deviation) and the resulting per-relation ranks are the paper's payload.
 
 > Numbering note. `D1` is internal workspace housekeeping (no protocol content).
 > `D17` is case-study-specific (the claim mapping and label conventions of a
 > scored framework); it is journaled with that case study and published in its
-> paper. Likewise `D20`, `D23`, `D25`, and `D26` are research-direction or
+> paper. Likewise `D20`, `D23`, `D25`, `D26`, and `D27` are research-direction or
 > case-study-specific (a reordering of the work queue, a scorecard assembly, and
 > the per-relation rebate audits of a scored framework); they are journaled with
 > that case study and published in its paper. The reserved numbers are kept so
