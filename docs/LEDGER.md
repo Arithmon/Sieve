@@ -45,8 +45,8 @@ nothing is hidden, only located.
 | `M2` | Pipeline on N0 and N1; negative controls condemned | **In progress.** Grammar engine and N0/N1 on synthetic targets done; negative controls condemned (an adversarial fit and an invented alphabet land at the 89th and 17th percentile of the fitting null, below the 99.9th survival threshold). Remains: deeper complexity budget for production. |
 | `M3` | Historical controls reproduce known verdicts | **Done at scaffold level.** Eddington's 136-then-137 fails at every era (revision penalty applied); the quantum Hall quantization passes. Paper-grade remains: primary Birge citations. |
 | `M4` | N2 and N3 complete; full scorecard on a live case study | **In progress.** N2 and N3 complete at scaffold level (N2 prices alphabet freedom, the survival threshold is the envelope not the median; N3 catches assignment vagueness). The live case-study scorecard is the payload of the paper and is assembled there. |
-| `M5` | Robustness battery | Open. Three grammars by two complexity measures; stability report. |
-| `M6` | Draft, multi-reviewer read, submission | Open. |
+| `M5` | Robustness battery | **Done at scaffold level 2026-06-16.** The survivor set is invariant under both complexity measures (competitors within the claim's node budget; competitors at most as cheap at the converged depth). Absolute isolation is grammar-dependent and grows with the alphabet (the expected haystack effect), while the qualitative isolated-versus-crowded ordering is preserved across the three grammars. The case-study numbers are the paper's payload. |
+| `M6` | Draft, multi-reviewer read, submission | **In progress.** Draft assembled, multi-reviewer read done, venue shortlisted, and a class-agnostic preprint built. Remains: final cold reread and submission. |
 
 **Sequencing.** `M2` and `M3` may be developed before `M1` is *deposited*, as
 long as no real-observable search runs: synthetic and historical targets only,
@@ -187,9 +187,11 @@ the historical controls using their own frozen inputs.
 > Numbering note. `D1` is internal workspace housekeeping (no protocol content).
 > `D17` is case-study-specific (the claim mapping and label conventions of a
 > scored framework); it is journaled with that case study and published in its
-> paper. Likewise `D20`, `D23`, `D25`, `D26`, and `D27` are research-direction or
-> case-study-specific (a reordering of the work queue, a scorecard assembly, and
-> the per-relation rebate audits of a scored framework); they are journaled with
-> that case study and published in its paper. The reserved numbers are kept so
+> paper. Likewise `D20`, `D23`, `D25`, `D26`, `D27`, and `D29`-`D32` are
+> research-direction or case-study-specific (a reordering of the work queue, a
+> scorecard assembly, the per-relation rebate audits of a scored framework, and
+> the assembly, multi-reviewer read, and robustness scoring of the case-study
+> paper itself); they are journaled with that case study and published in its
+> paper. The reserved numbers are kept so
 > this ledger stays a faithful index of every choice made, with nothing hidden,
 > only located.
