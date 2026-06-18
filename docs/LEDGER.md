@@ -184,6 +184,44 @@ the historical controls using their own frozen inputs.
   the case-study windows (a framework's measured value plus or minus its achieved
   deviation) and the resulting per-relation ranks are the paper's payload.
 
+- **D33 (2026-06-18).** Inverse-problem landscape sweep (general method). The
+  scorecard scores ONE choice of grammar leaves against the freeze. The
+  inverse-problem question — is a given choice of input parameters (here: the
+  values of grammar leaves carrying a geometric input, e.g. Betti numbers of a
+  manifold) special at fitting the freeze, or merely convenient? — is a
+  separate experiment, run by SWEEPING those leaf values over a defensible
+  candidate grid and re-running the blind search per leaf assignment. The
+  per-assignment statistics are the same as the scorecard's (coverage at fixed
+  budget; total min-MDL to reach the headline set), aggregated over the
+  freeze. The reference assignment is then placed as a percentile in the
+  resulting landscape, against a PRE-REGISTERED specialness rule deposited
+  before any landscape value is read. The sweep is "mirage-proof" by
+  construction iff the alphabet SIZE is held constant across the grid — only
+  the leaf VALUES vary — so a coverage difference cannot be the
+  alphabet-diversity artifact that masquerades as specialness. Two
+  implementation points the method needs in practice. (i) The matching window
+  is a UNIFORM relative tolerance tau, identical across assignments and
+  observables (the per-claim "achieved deviation" window of the framework's
+  own scorecard does not apply: there is no per-assignment claim). Reporting
+  at multiple tau in {1e-2, 1e-3, 1e-4} is required, because coverage may
+  saturate at loose tau (the non-swept leaves alone reach everything) and only
+  discriminate at tight tau; the load-bearing reading is the cost statistic at
+  the saturated tau plus coverage at the discriminating tau, not the
+  tightest-tau tail (which partly counts accidental ultra-precise hits). (ii)
+  Long sweeps must be CRASH-SAFE: the orchestrator dumps a partial JSON of
+  completed assignments every N pairs (atomic rename) and auto-resumes if the
+  saved grid parameters match, so a midnight crash on a hot machine loses at
+  most N assignments, not the whole run. Two scoping points. (a) The verdict
+  is GRAMMAR-RELATIVE: leaves outside the swept grammar (e.g. transcendental
+  constants in a separate grammar) are out of scope by design, and the report
+  must say so. (b) The landscape is GEOMETRY-AGNOSTIC at the search layer: the
+  grammar sees only leaf values, not the manifold class, so an assignment's
+  percentile is invariant under re-interpreting the leaves as another geometry
+  (e.g. G2 Betti vs CY3 Hodge via a Kunneth shadow) — the only thing that
+  changes between geometries is the realizability MASK overlaid on the same
+  landscape. A separate Q-A on topological realizability remains a
+  citation-and-census job, not a search.
+
 > Numbering note. `D1` is internal workspace housekeeping (no protocol content).
 > `D17` is case-study-specific (the claim mapping and label conventions of a
 > scored framework); it is journaled with that case study and published in its
