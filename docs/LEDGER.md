@@ -186,9 +186,9 @@ the historical controls using their own frozen inputs.
 
 - **D33 (2026-06-18).** Inverse-problem landscape sweep (general method). The
   scorecard scores ONE choice of grammar leaves against the freeze. The
-  inverse-problem question — is a given choice of input parameters (here: the
+  inverse-problem question (is a given choice of input parameters, here the
   values of grammar leaves carrying a geometric input, e.g. Betti numbers of a
-  manifold) special at fitting the freeze, or merely convenient? — is a
+  manifold, special at fitting the freeze, or merely convenient?) is a
   separate experiment, run by SWEEPING those leaf values over a defensible
   candidate grid and re-running the blind search per leaf assignment. The
   per-assignment statistics are the same as the scorecard's (coverage at fixed
@@ -196,8 +196,8 @@ the historical controls using their own frozen inputs.
   freeze. The reference assignment is then placed as a percentile in the
   resulting landscape, against a PRE-REGISTERED specialness rule deposited
   before any landscape value is read. The sweep is "mirage-proof" by
-  construction iff the alphabet SIZE is held constant across the grid — only
-  the leaf VALUES vary — so a coverage difference cannot be the
+  construction iff the alphabet SIZE is held constant across the grid (only
+  the leaf VALUES vary), so a coverage difference cannot be the
   alphabet-diversity artifact that masquerades as specialness. Two
   implementation points the method needs in practice. (i) The matching window
   is a UNIFORM relative tolerance tau, identical across assignments and
@@ -217,7 +217,7 @@ the historical controls using their own frozen inputs.
   must say so. (b) The landscape is GEOMETRY-AGNOSTIC at the search layer: the
   grammar sees only leaf values, not the manifold class, so an assignment's
   percentile is invariant under re-interpreting the leaves as another geometry
-  (e.g. G2 Betti vs CY3 Hodge via a Kunneth shadow) — the only thing that
+  (e.g. G2 Betti vs CY3 Hodge via a Kunneth shadow): the only thing that
   changes between geometries is the realizability MASK overlaid on the same
   landscape. A separate Q-A on topological realizability remains a
   citation-and-census job, not a search.

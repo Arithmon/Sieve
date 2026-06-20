@@ -75,8 +75,8 @@ per relation, before the search runs.
 
 ### kappa_NODE: node count (secondary, robustness)
 - kappa = number of nodes in the expression tree. Blunt, but immune to alphabet
-  bookkeeping disputes. Results stable across both measures = robust claim;
-  results that flip = reported as fragile (skeleton 6.2).
+  bookkeeping disputes. Results consistent across both measures = claim reported
+  as measure-independent; results that flip = reported as fragile (skeleton 6.2).
 
 ---
 
