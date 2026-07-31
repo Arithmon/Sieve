@@ -1,6 +1,7 @@
 # The Arithmon Sieve
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20666879.svg)](https://doi.org/10.5281/zenodo.20666879)
+[![Preprint](https://zenodo.org/badge/DOI/10.5281/zenodo.21706146.svg)](https://doi.org/10.5281/zenodo.21706146)
 
 The methodology arm of the [Arithmon program](https://github.com/arithmon):
 a formal standard for the question *how surprising is a claimed exact relation
@@ -90,6 +91,26 @@ ranks, and the in-framework-theorem rebate) lives in
 [10.5281/zenodo.20666878](https://doi.org/10.5281/zenodo.20666878)).
 At deposit time, **no expression search had run**; everything below operates
 against these inputs as frozen.
+
+**Freeze v1.1 DEPOSITED 2026-07-30**: DOI
+[10.5281/zenodo.21705149](https://doi.org/10.5281/zenodo.21705149).
+Adds the held-out registration, the case file, and the frozen analysis
+runner, deposited before the held-out runs it governs. Verdicts against
+v1.0 stand.
+
+**Companion preprint PUBLISHED 2026-07-30**: *Preregistration Requires a
+Decision Rule*, concept DOI
+[10.5281/zenodo.21706146](https://doi.org/10.5281/zenodo.21706146).
+The argument: freezing the inputs is not enough; without a frozen
+decision rule (explicit thresholds, fixed before the run), a
+registration still leaves room to choose the verdict after the fact.
+The paper freezes the Sieve's rule and applies it back to the
+development case. The honest headline is printed in the abstract: the
+frozen rule, applied to the contested historical case, admits
+Eddington's 1941 relation as a screen survivor. Freezing did not make
+the contested verdict go away; it made the commitment explicit and
+priced it. Anyone who prefers a stricter rule must freeze it, and say
+so, before the next run.
 
 **Calibration complete (scaffold budget, 5-6 nodes):**
 
