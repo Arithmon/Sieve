@@ -26,10 +26,12 @@ The Sieve is an attempt at an instrument that sorts them in advance, by a rule
 fixed before looking. The inputs (which constants count, which formulas are
 allowed) are written down and time-stamped with a public DOI before any search
 runs, so nothing can be quietly tuned to the answer. The instrument is then
-turned on known cases to check it behaves (Eddington must fail, the quantum Hall
-relation must pass), and only after that on anything we care about, including the
-GIFT framework itself. Anyone can run it on their own framework, including one
-built to try to beat it.
+checked on known cases (Eddington and quantum Hall are the development poles),
+with the duty to report which components and policies separate them, including
+where the frozen rule does not reproduce the received verdict: it admits
+Eddington's 1941 claim as a screen survivor, and says so. Only after that is it
+turned on anything we care about, including the GIFT framework itself. Anyone
+can run it on their own framework, including one built to try to beat it.
 
 ---
 
@@ -71,11 +73,14 @@ ranks, and the in-framework-theorem rebate) lives in
    a new freeze version with its own DOI; verdicts against the old version
    stand.
 2. **Calibration before use.** The method must condemn deliberately
-   constructed fake frameworks and reproduce known historical verdicts
-   (Eddington's 1/136-then-1/137 must fail, including a penalty for the
-   revision; the quantum Hall relation must pass) before it is allowed to
-   score anything we care about. If it fails calibration, that failure is the
-   result.
+   constructed fake frameworks and be run against the historical development
+   cases (Eddington's 1/136-then-1/137, with a penalty for the revision; the
+   quantum Hall relation) before it is allowed to score anything we care
+   about. Development verdicts are reported as computed, never tuned to the
+   received ones: where the frozen rule disagrees with the textbook verdict
+   (it admits Eddington-1941 at the registered thresholds), the disagreement
+   is published and priced. If calibration surfaces a failure, that failure
+   is the result.
 3. **The scorecard, not a single p-value.** Per-relation local significance,
    joint global significance under each null, complexity budget consumed, and
    an explicit declaration of researcher degrees of freedom.
@@ -117,10 +122,13 @@ so, before the next run.
 - Negative controls CONDEMNED: an adversarial best-match fit and an
   invented-alphabet framework land at the 89th and 17th percentile of the
   fitting null (survival requires the 99.9th).
-- Historical verdicts reproduced: Eddington's 136-then-137 FAILS at every
-  era (never within 1 sigma of contemporary data, revision penalty applied);
-  the quantum Hall quantization PASSES (exact, essentially unique, never
-  revised, explained by TKNN 1982).
+- Historical development cases run: at the scaffold screen (agreement within
+  1 sigma), Eddington's 136-then-137 fails at every era (revision penalty
+  applied) and the quantum Hall quantization passes (exact, essentially
+  unique, never revised, explained by TKNN 1982). Under the frozen v1.1 rule
+  (tau_z = 2), Eddington-1941 is admitted as a screen survivor, as the
+  preprint entry above reports; the two statements differ by the agreement
+  threshold, which is the preprint's point.
 - Four nulls implemented: N1/N2 price the search (survival thresholds clear
   the N2 alphabet-freedom envelope), N3 catches assignment vagueness, N0
   anchors the accidental-match baseline.

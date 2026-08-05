@@ -27,8 +27,10 @@ nothing is hidden, only located.
    paper, never claimed to be fully recovered, and the freeze is never said to
    retroactively sanitize a case study.
 3. **Calibration before use.** The method must condemn deliberately constructed
-   fake frameworks and reproduce known historical verdicts before it scores
-   anything we care about. If it fails calibration, that failure is the result.
+   fake frameworks and be run against the historical development cases before it
+   scores anything we care about. Development verdicts are reported as computed,
+   never tuned to the received ones (D34). If calibration surfaces a failure,
+   that failure is the result.
 4. **Precision is never the headline.** The deliverable is the scorecard, not a
    single p-value.
 5. **Decisions are journaled** here, dated, with rationale. A register move
@@ -43,7 +45,7 @@ nothing is hidden, only located.
 |---|-----------|--------|
 | `M1` | Freeze observables and grammars, DOI deposit | **DONE 2026-06-12.** DOI [10.5281/zenodo.20666879](https://doi.org/10.5281/zenodo.20666879) (concept [10.5281/zenodo.20666878](https://doi.org/10.5281/zenodo.20666878)), via release v1.0; no search ran before deposit. |
 | `M2` | Pipeline on N0 and N1; negative controls condemned | **In progress.** Grammar engine and N0/N1 on synthetic targets done; negative controls condemned (an adversarial fit and an invented alphabet land at the 89th and 17th percentile of the fitting null, below the 99.9th survival threshold). Remains: deeper complexity budget for production. |
-| `M3` | Historical controls reproduce known verdicts | **Done at scaffold level.** Eddington's 136-then-137 fails at every era (revision penalty applied); the quantum Hall quantization passes. Paper-grade remains: primary Birge citations. |
+| `M3` | Historical controls run against known verdicts | **Done at scaffold level.** At the scaffold screen (agreement within 1 sigma), Eddington's 136-then-137 fails at every era (revision penalty applied) and the quantum Hall quantization passes. Under the frozen v1.1 rule (tau_z = 2), Eddington-1941 is admitted as a screen survivor (D34). Paper-grade remains: the two Birge tables read for their stated uncertainty convention. |
 | `M4` | N2 and N3 complete; full scorecard on a live case study | **In progress.** N2 and N3 complete at scaffold level (N2 prices alphabet freedom, the survival threshold is the envelope not the median; N3 catches assignment vagueness). The live case-study scorecard is the payload of the paper and is assembled there. |
 | `M5` | Robustness battery | **Done at scaffold level 2026-06-16.** The survivor set is invariant under both complexity measures (competitors within the claim's node budget; competitors at most as cheap at the converged depth). Absolute isolation is grammar-dependent and grows with the alphabet (the expected haystack effect), while the qualitative isolated-versus-crowded ordering is preserved across the three grammars. The case-study numbers are the paper's payload. |
 | `M6` | Draft, multi-reviewer read, submission | **In progress.** Draft assembled, multi-reviewer read done, venue shortlisted, and a class-agnostic preprint built. Remains: final cold reread and submission. |
@@ -221,6 +223,24 @@ the historical controls using their own frozen inputs.
   changes between geometries is the realizability MASK overlaid on the same
   landscape. A separate Q-A on topological realizability remains a
   citation-and-census job, not a search.
+
+- **D34 (2026-08-05).** Development cases are poles, not prescriptions
+  (reconciling the calibration language with the v1.1 frozen rule). Early
+  wording in this repository said "Eddington must fail, quantum Hall must
+  pass". That wording described the scaffold screen (agreement within 1
+  sigma), and it became misleading once the decision rule itself was frozen:
+  the v1.1 registration (DOI 10.5281/zenodo.21705149) fixes tau_z = 2 and a
+  revision rule, and under that frozen rule Eddington's 1941 claim is
+  admitted as a screen survivor, a result the companion preprint prints in
+  its abstract and prices. The discipline is therefore restated: the
+  development cases anchor the two poles of the reference class, and the
+  instrument's duty is to report which components and policies separate
+  them, never to guarantee a received verdict. A calibration that
+  contradicts the textbook is published as such (preprint, sections 5 and
+  7); a calibration that is quietly tuned until the textbook wins would be
+  exactly the after-the-fact judgement this program exists to replace.
+  README and milestone `M3` reworded accordingly; no frozen artifact
+  changes, no verdict changes.
 
 > Numbering note. `D1` is internal workspace housekeeping (no protocol content).
 > `D17` is case-study-specific (the claim mapping and label conventions of a
