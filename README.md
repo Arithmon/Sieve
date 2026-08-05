@@ -30,7 +30,7 @@ checked on known cases (Eddington and quantum Hall are the development poles),
 with the duty to report which components and policies separate them, including
 where the frozen rule does not reproduce the received verdict: it admits
 Eddington's 1941 claim as a screen survivor, and says so. Only after that is it
-turned on anything we care about, including the GIFT framework itself. Anyone
+turned on anything we care about, including the K₇ framework itself. Anyone
 can run it on their own framework, including one built to try to beat it.
 
 ---
@@ -72,7 +72,7 @@ ranks, and the in-framework-theorem rebate) lives in
    timestamp is the proof. A data update (new PDG edition, new global fit) is
    a new freeze version with its own DOI; verdicts against the old version
    stand.
-2. **Calibration before use.** The method must condemn deliberately
+2. **Development checks and calibration before use.** The method must condemn deliberately
    constructed fake frameworks and be run against the historical development
    cases (Eddington's 1/136-then-1/137, with a penalty for the revision; the
    quantum Hall relation) before it is allowed to score anything we care
@@ -117,7 +117,7 @@ the contested verdict go away; it made the commitment explicit and
 priced it. Anyone who prefers a stricter rule must freeze it, and say
 so, before the next run.
 
-**Calibration complete (scaffold budget, 5-6 nodes):**
+**Development checks and scaffold calibration completed (scaffold budget, 5-6 nodes):**
 
 - Negative controls CONDEMNED: an adversarial best-match fit and an
   invented-alphabet framework land at the 89th and 17th percentile of the
