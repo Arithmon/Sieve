@@ -1,7 +1,7 @@
 # The Arithmon Sieve
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20666879.svg)](https://doi.org/10.5281/zenodo.20666879)
-[![Preprint](https://zenodo.org/badge/DOI/10.5281/zenodo.21706146.svg)](https://doi.org/10.5281/zenodo.21706146)
+[![Preprint](https://zenodo.org/badge/DOI/10.5281/zenodo.21706145.svg)](https://doi.org/10.5281/zenodo.21706145)
 
 The methodology arm of the [Arithmon program](https://github.com/arithmon):
 a formal standard for the question *how surprising is a claimed exact relation
@@ -103,9 +103,20 @@ Adds the held-out registration, the case file, and the frozen analysis
 runner, deposited before the held-out runs it governs. Verdicts against
 v1.0 stand.
 
-**Companion preprint PUBLISHED 2026-07-30**: *Preregistration Requires a
-Decision Rule*, concept DOI
-[10.5281/zenodo.21706146](https://doi.org/10.5281/zenodo.21706146).
+**Erratum v1.1.1 DEPOSITED 2026-08-06**: DOI
+[10.5281/zenodo.21820451](https://doi.org/10.5281/zenodo.21820451).
+Corrects statements, re-runs nothing: the v1.1 registration text stands
+as frozen, errors included, with the erratum above it; the analysis
+runner is byte-identical and the held-out results are re-derived
+bit-for-bit from it. No value, node count or verdict moves. The held-out
+run record enters the deposit for the first time (v1.1 was deposited
+before the runs, by design).
+
+**Companion preprint PUBLISHED 2026-07-30, revised (v2) 2026-08-06**:
+*Preregistration Requires a Decision Rule*, concept DOI
+[10.5281/zenodo.21706145](https://doi.org/10.5281/zenodo.21706145)
+(v1: [10.5281/zenodo.21706146](https://doi.org/10.5281/zenodo.21706146),
+v2: [10.5281/zenodo.21824030](https://doi.org/10.5281/zenodo.21824030)).
 The argument: freezing the inputs is not enough; without a frozen
 decision rule (explicit thresholds, fixed before the run), a
 registration still leaves room to choose the verdict after the fact.
