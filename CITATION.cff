@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "The Arithmon Sieve"
+message: >-
+  If you use or discuss this repository, please cite it as below.
+type: software
+authors:
+  - family-names: "de La Fournière"
+    given-names: "Brieuc"
+repository-code: "https://github.com/Arithmon/Sieve"
+abstract: >-
+  A pre-registered methodology standard for the question: how surprising is a claimed exact relation between mathematical invariants and measured constants?
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20666879
+    description: Frozen inputs and pre-registration (v1.0, 2026-06-12).
+  - type: doi
+    value: 10.5281/zenodo.21706145
+    description: Concept DOI of the companion preprint "Preregistration Requires a Decision Rule".
+license: MIT
