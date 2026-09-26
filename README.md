@@ -112,13 +112,14 @@ bit-for-bit from it. No value, node count or verdict moves. The held-out
 run record enters the deposit for the first time (v1.1 was deposited
 before the runs, by design).
 
-**Companion preprint PUBLISHED 2026-07-30, revised (v2.1) 2026-08-13**:
+**Companion preprint PUBLISHED 2026-07-30, revised (v2.2) 2026-09-26**:
 *Preregistration Requires a Decision Rule: Predictivism and the
 classification of numerical coincidence claims*, concept DOI
 [10.5281/zenodo.21706145](https://doi.org/10.5281/zenodo.21706145)
 (v1: [10.5281/zenodo.21706146](https://doi.org/10.5281/zenodo.21706146),
 v2: [10.5281/zenodo.21824030](https://doi.org/10.5281/zenodo.21824030),
-v2.1: [10.5281/zenodo.21916312](https://doi.org/10.5281/zenodo.21916312)).
+v2.1: [10.5281/zenodo.21916312](https://doi.org/10.5281/zenodo.21916312),
+v2.2: [10.5281/zenodo.22978049](https://doi.org/10.5281/zenodo.22978049)).
 The argument: freezing the inputs is not enough; without a frozen
 decision rule (explicit thresholds, fixed before the run), a
 registration still leaves room to choose the verdict after the fact.
