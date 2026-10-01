@@ -120,7 +120,8 @@ classification of numerical coincidence claims*, concept DOI
 v2: [10.5281/zenodo.21824030](https://doi.org/10.5281/zenodo.21824030),
 v2.1: [10.5281/zenodo.21916312](https://doi.org/10.5281/zenodo.21916312),
 v2.2: [10.5281/zenodo.22978049](https://doi.org/10.5281/zenodo.22978049));
-indexed on PhilPapers: [DELPRA-11](https://philpapers.org/rec/DELPRA-11).
+indexed on PhilPapers: [DELPRA-11](https://philpapers.org/rec/DELPRA-11);
+SSRN: [10.2139/ssrn.7206359](https://doi.org/10.2139/ssrn.7206359).
 The argument: freezing the inputs is not enough; without a frozen
 decision rule (explicit thresholds, fixed before the run), a
 registration still leaves room to choose the verdict after the fact.

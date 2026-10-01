@@ -16,4 +16,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21706145
     description: Concept DOI of the companion preprint "Preregistration Requires a Decision Rule".
+  - type: doi
+    value: 10.2139/ssrn.7206359
+    description: SSRN record of the companion preprint "Preregistration Requires a Decision Rule".
 license: MIT
