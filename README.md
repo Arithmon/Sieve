@@ -112,6 +112,14 @@ bit-for-bit from it. No value, node count or verdict moves. The held-out
 run record enters the deposit for the first time (v1.1 was deposited
 before the runs, by design).
 
+**Methods preprint PUBLISHED 2026-06-17**: *A reproducible standard for
+arithmetic coincidence claims in fundamental physics*, concept DOI
+[10.5281/zenodo.20728964](https://doi.org/10.5281/zenodo.20728964)
+(v1: [10.5281/zenodo.20728965](https://doi.org/10.5281/zenodo.20728965)).
+The paper that states the standard (declared expression space,
+complexity measures, null models with look-elsewhere correction, the
+scorecard) against the frozen inputs above.
+
 **Companion preprint PUBLISHED 2026-07-30, revised (v2.2) 2026-09-26**:
 *Preregistration Requires a Decision Rule: Predictivism and the
 classification of numerical coincidence claims*, concept DOI
